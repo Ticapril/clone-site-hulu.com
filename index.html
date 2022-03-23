@@ -22,23 +22,93 @@
             color: #fff;
             text-decoration: none;
             text-transform: uppercase;
-            margin-left:0;
+            padding: 40px;
         }
         .menu {
             display:flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        .info-box {
+            /* background-color: #f00; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 80px;
         }
 
-
-
+        .imagem-patrocinadores {
+            width: 650px;
+        }
+        .text-green {
+            color: #1CE783;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+        .text-white-bolder {
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: 900;
+        }
+        .text-centralize{
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+        }
+        .btn-info-box {
+            padding: 18px 40px 18px 40px;
+            text-transform: uppercase;
+            font-weight: 800;
+            background-color: #fff;
+            border: none;
+            border-radius: 5px;
+        }
+        .header_links {
+            display: flex;
+        }
+        .mg {
+            margin:10px;
+        }
+         a {
+            text-decoration: none;
+            color: #c1c1c1;
+         }
+         .text-gray {
+            color: #c1c1c1;
+         }
+         .mg-right {
+            margin-right: 3px;
+         }
+         .text-white {
+            color: #fff;
+            font-size: 1.1rem;
+            text-decoration: underline;
+         }
+       
     </style>
 </head>
 <body>
     <!-- primeiro passo adicionar um html semântico -->
-    <section class="section-back">
-            <header>
-                <nav class="menu">
+    <section class="section-back">  <!--pai de header -->
+            <header> <!-- filho 1 e pai de nav e de div -->
+                <!-- first element in the header -->
+                <nav class="menu"> <!-- filho 1 e pai de a -->
                     <a href="#" class="link-menu">Log in</a>
                 </nav>
+                <!-- second element is a info box -->
+                <div class="info-box">
+                    <p class="text-green mg">Bundle with any hulu plan & save</p>
+                    <img src="imagens/patrocinadores.png" alt="Patrocinadores" class="imagem-patrocinadores"/>
+                    <p class="text-white-bolder">Get endless entertainment, live sports, and the shows and</br><span class="text-centralize">movies you love.</span></p>
+                    <button type="submit" class="btn-info-box mg">Get the Disney bundle</button>
+                    <div class="header_links mg">
+                        <a href="#">What's included?</a>
+                        <p class="text-gray mg-right">See</p>
+                        <a href="#">Bundle terms</a>
+                    </div>
+                    <div><a href="#" class="text-white">Sign-up for Hulu only</a></div>
+                </div>
             </header>
     </section>
     <main>
