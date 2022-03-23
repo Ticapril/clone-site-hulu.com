@@ -1,0 +1,2 @@
+//Primeiro passo é construir o menu e header da página www.hulu.com
+//depois será desenvolvido outras partes 
